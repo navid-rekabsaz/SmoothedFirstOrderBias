@@ -5,7 +5,7 @@ The repository provides the code for measuring societal biases and phenomena in 
 *Navid Rekabsaz, Robert West, James Henderson, Allan Hanbury
 In proceedings of the AAAI Conference on Web and Social Media (ICWSM) 2021*
 
-Here, you will find the implementation of the *smoothed first-order bias measurement* method as well as three high-order methods.
+In this repository, you will find the implementation of the *smoothed first-order bias measurement* method as well as three high-order methods.
 
 ### Word Embeddings
 All provided methods use word embeddings to measure bias in the underlying text corpus. The methods are suited for word2vec skip-gram (SG) and GloVe. You can use any pre-trained versions of these models so far that the model contains context vectors in addition to word vectors. If you train the models from scratch, please use [gensim](https://radimrehurek.com/gensim/) library for SG or the [standard tool of GloVe](https://nlp.stanford.edu/projects/glove/), and store the context-vectors after finishing the training.
