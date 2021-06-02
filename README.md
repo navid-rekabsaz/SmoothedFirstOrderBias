@@ -13,6 +13,7 @@ All provided methods use word embeddings to measure bias in the underlying text 
 To be able to reproduce the experiments, you can download our word embedding models, trained on an English Wikipedia text corpus. First download the compressed embeddings from:
 
 SG: `https://drive.jku.at/filr/public-link/file-download/ff808082798b3a630179cd4ddabc0921/29517/8035538091838691595/sg.tar.gz`
+
 GloVe: `https://drive.jku.at/filr/public-link/file-download/ff808082798b3a630179cd46d4c20919/29516/-84631503989242620/glove.tar.gz`
 
 Execute the following step to decompress the files in the `word_embeddings` folder.
