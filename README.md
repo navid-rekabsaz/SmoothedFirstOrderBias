@@ -10,15 +10,18 @@ In this repository, you will find the implementation of the *smoothed first-orde
 ### Word Embeddings
 All provided methods use word embeddings to measure bias in the underlying text corpus. The methods are suited for word2vec skip-gram (SG) and GloVe. You can use any pre-trained versions of these models so far that the model contains context vectors in addition to word vectors. If you train the models from scratch, please use [gensim](https://radimrehurek.com/gensim/) library for SG or the [standard tool of GloVe](https://nlp.stanford.edu/projects/glove/), and store the context-vectors after finishing the training.
 
-To be able to reproduce the experiments, you can download our word embedding models, trained on an English Wikipedia text corpus. Execute the following step for the word2vec skip-gram model ...
+To be able to reproduce the experiments, you can download our word embedding models, trained on an English Wikipedia text corpus. First download the compressed embeddings from:
+
+SG: `https://drive.jku.at/filr/public-link/file-download/ff808082798b3a630179cd4ddabc0921/29517/8035538091838691595/sg.tar.gz`
+GloVe: `https://drive.jku.at/filr/public-link/file-download/ff808082798b3a630179cd46d4c20919/29516/-84631503989242620/glove.tar.gz`
+
+Execute the following step to decompress the files in the `word_embeddings` folder.
 ```
 cd word_embeddings
-wget https://drive.jku.at/filr/public-link/file-download/ff808082798b3a630179cd4ddabc0921/29517/8035538091838691595/sg.tar.gz
-tar xvzf glove.tar.gz
 ```
-... and for the GloVe word embedding:
+Copy the files `sg.tar.gz` and `glove.tar.gz` to this folder and run:
 ```
-wget https://drive.jku.at/filr/public-link/file-download/ff808082798b3a630179cd46d4c20919/29516/-84631503989242620/glove.tar.gz
+tar xvzf sg.tar.gz
 tar xvzf glove.tar.gz
 ```
 
